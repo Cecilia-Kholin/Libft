@@ -11,23 +11,24 @@
 /* ************************************************************************** */
 #include "libft.h"
 // buscar la primera aparición de un carácter específico dentro de una cadena de texto
-char *strchr(const char *s, int c)
+char *ft_strchr(const char *str, int c)
 {
     int i;
 
     i = 0;
-    while(s[i] != '\0')
+    while(str[i] != '\0')
     {
-        if (s[i] == c)
+        if (str[i] == c)
         {
-            return ((char *)s); 
+            return ((char *)&str[i]);
         }
         i++;
     }
+    return (NULL);
 }
 #include <stdio.h> 
 
-int main ()
+int main()
 {
     char s[] = "holamundo";
     char *resultado_ptr;

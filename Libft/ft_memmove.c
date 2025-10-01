@@ -34,15 +34,15 @@ void *ft_memmove(void *dest, const void *src, size_t n)
     }
     return dest;
 }
-//#include <stdio.h> 
-//int main()
-//{
-//    char src[] = "Hola Mundo";
-//    char dest[20] = "Adios mundoyttyuty";
-//    printf("dest antes: %s\n", dest);
-//    ft_memmove(dest, src, 11);
-//    printf("src:  %s\n", src);
-//    printf("dest: %s\n", dest);
-//    
-//    return 0;
-//}
+#include <stdio.h> 
+int main()
+{
+    char src[] = "Hola Mundo";
+    char dest[20] = "Adios mundoyttyuty";
+    printf("dest antes: %s\n", dest);
+    ft_memmove(dest, src, 11);
+    printf("src:  %s\n", src);
+    printf("dest: %s\n", dest);
+    
+    return 0;
+}
