@@ -14,3 +14,4 @@
 
 size_t	ft_strlen(const char *str); // Se pone para poder usarlos en otras funciones 
 size_t ft_strlcpy(char *dest, const char *src, size_t n);
+char *ft_strchr(const char *str, int c);

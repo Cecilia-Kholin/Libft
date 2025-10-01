@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maricamp <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,21 +10,28 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-
-int ft_toupper(int c)
+// buscar la primera aparición de un carácter específico dentro de una cadena de texto
+char *strchr(const char *s, int c)
 {
-    if (c >= 'a' && c <= 'z')
+    int i;
+
+    i = 0;
+    while(s[i] != '\0')
     {
-        c = c - ' ';
+        if (s[i] == c)
+        {
+            return ((char *)s); 
+        }
+        i++;
     }
-    return (c);
 }
 #include <stdio.h> 
-int main()
+
+int main ()
 {
-    int c = 'v';
-    c = ft_toupper(c);
-    printf("resultado %c\n", c);
+    char s[] = "holamundo";
+    char *resultado_ptr;
+
+    resultado_ptr = ft_strchr(s, 'm');
+    printf("resultado %s\n", resultado_ptr);
 }
-
-

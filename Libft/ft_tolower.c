@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maricamp <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -13,16 +13,16 @@
 
 int ft_toupper(int c)
 {
-    if (c >= 'a' && c <= 'z')
+    if (c >= 'A' && c <= 'Z')
     {
-        c = c - ' ';
+        c = c + ' ';
     }
     return (c);
 }
 #include <stdio.h> 
 int main()
 {
-    int c = 'v';
+    int c = 'A';
     c = ft_toupper(c);
     printf("resultado %c\n", c);
 }
