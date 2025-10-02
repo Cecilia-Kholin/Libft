@@ -9,6 +9,7 @@
 /*   Updated: 2025/09/30 16:48:52 by maricamp         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+//sobreescribo donde yo quiero.
 #include "libft.h"
 
 void *ft_memmove(void *dest, const void *src, size_t n)

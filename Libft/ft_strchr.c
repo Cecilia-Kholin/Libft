@@ -10,29 +10,40 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+//str[i] → accedes al carácter número i.
+//&str[i] → obtienes un puntero a ese carácter.
 // buscar la primera aparición de un carácter específico dentro de una cadena de texto
-char *ft_strchr(const char *str, int c)
+char *ft_strchr(const char *str, int c) //puedes leerlos (*str), recorrer la cadena, compararlos… pero no puedes hacer *str = 'x'
 {
-    int i;
+    size_t i;
+    size_t str_len;
 
     i = 0;
-    while(str[i] != '\0')
+    while(str[i])
     {
-        if (str[i] == c)
+        if ((unsigned char)str[i] == c)
         {
-            return ((char *)&str[i]);
+            return ((char *)&str[i]);//devuelvo el puntero de donde esta c
+            //el valor que entra es un const char, para poder usarlo se debe pasar a un puntero char* normal
         }
         i++;
     }
+    if (c == '\0')
+    {
+        return ((char *)&str[i]);
+    }
     return (NULL);
 }
-#include <stdio.h> 
+/* #include <stdio.h> 
 
-int main()
+int main(void)
 {
-    char s[] = "holamundo";
-    char *resultado_ptr;
+    char    *resultado;
+    const char    *str;
 
-    resultado_ptr = ft_strchr(s, 'm');
-    printf("resultado %s\n", resultado_ptr);
-}
+    str = "hola mundo";
+    resultado = ft_strchr(str, '3');
+
+    printf("Resultado: %s\n", resultado);
+    return 0;
+} */
