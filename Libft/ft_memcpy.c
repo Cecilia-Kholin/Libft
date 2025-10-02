@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maricamp <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 15:38:10 by maricamp          #+#    #+#             */
-/*   Updated: 2025/09/30 15:38:13 by maricamp         ###   ########.fr       */
+/*   Updated: 2025/10/02 14:33:39 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
 
 void    ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -19,7 +19,7 @@ void    ft_memcpy(void *dest, const void *src, size_t n)
     i = 0;
     j = 0;
 
-    while(i <= n)
+    while(i < n)
     {
         if (j == i)
         {
