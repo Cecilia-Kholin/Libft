@@ -6,7 +6,7 @@
 /*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 10:55:39 by maricamp          #+#    #+#             */
-/*   Updated: 2025/10/02 12:51:02 by usuario          ###   ########.fr       */
+/*   Updated: 2025/10/06 14:53:30 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	*ft_memset(void *str, int c, size_t n)
 	}
 	return (str);
 }
-#include <stdio.h> 
+/* #include <stdio.h> 
 int main()
 {
     char str[15] = "holaquetals";
@@ -45,4 +45,4 @@ int main()
     for (int i = 0; i < 10; i++) {
         printf("%c ", buffer[i]);
     }
-}
+} */

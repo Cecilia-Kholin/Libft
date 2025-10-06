@@ -3,13 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: maricamp <maricamp@student.42.fr>          +#+  +:+       +#+         #
+#    By: usuario <usuario@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/30 11:36:30 by maricamp          #+#    #+#              #
-#    Updated: 2025/10/01 12:16:26 by maricamp         ###   ########.fr        #
+#    Updated: 2025/10/06 14:43:22 by usuario          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 SRCS		=	ft_strlen.c\
 				ft_memcpy.c\
+				ft_memset.c\
+				ft_calloc.c\
