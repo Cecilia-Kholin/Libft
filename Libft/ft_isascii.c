@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maricamp <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 10:40:40 by maricamp          #+#    #+#             */
-/*   Updated: 2025/09/30 10:40:43 by maricamp         ###   ########.fr       */
+/*   Updated: 2025/10/06 09:51:14 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+
 int    ft_isascii(int c)
 { 
     if (c >= 0 && c <= 127)

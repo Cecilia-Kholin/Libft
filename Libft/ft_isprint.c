@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maricamp <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 10:49:02 by maricamp          #+#    #+#             */
-/*   Updated: 2025/09/30 10:49:04 by maricamp         ###   ########.fr       */
+/*   Updated: 2025/10/06 09:51:23 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+
 int    ft_isprint(int c)
 { 
     if (c >= 32 && c <= 126)

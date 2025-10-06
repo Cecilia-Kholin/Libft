@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maricamp <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 10:33:42 by maricamp          #+#    #+#             */
-/*   Updated: 2025/09/30 10:33:44 by maricamp         ###   ########.fr       */
+/*   Updated: 2025/10/06 09:51:19 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+
 int    ft_isdigit(int c)
 { 
     if (c >= 48 && c <= 57)
