@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maricamp <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 12:52:08 by maricamp          #+#    #+#             */
-/*   Updated: 2025/10/01 12:52:11 by maricamp         ###   ########.fr       */
+/*   Updated: 2025/10/09 11:24:32 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
 //str[i] → accedes al carácter número i.
 //&str[i] → obtienes un puntero a ese carácter.
-// buscar la primera aparición de un carácter específico dentro de una cadena de texto
+//buscar la primera aparición de un carácter específico dentro de una cadena de texto
 char *ft_strchr(const char *str, int c) //puedes leerlos (*str), recorrer la cadena, compararlos… pero no puedes hacer *str = 'x'
 {
     size_t i;

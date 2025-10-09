@@ -1,0 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/02 11:32:46 by usuario           #+#    #+#             */
+/*   Updated: 2025/10/08 22:18:59 by usuario          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+//Envía la string ’s’ al file descriptor dado,
+//seguido de un salto de línea.
+#include "libft.h"
+
+void ft_putendl_fd(char *s, int fd)
+{
+    size_t i;
+
+    i = 0;
+    while (s[i])
+    {
+        write(fd, &s[i], 1);
+        i++;
+    }
+    write(fd, "\n", 1);
+}
