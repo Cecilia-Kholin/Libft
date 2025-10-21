@@ -6,7 +6,7 @@
 /*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 12:52:08 by maricamp          #+#    #+#             */
-/*   Updated: 2025/10/21 10:14:50 by usuario          ###   ########.fr       */
+/*   Updated: 2025/10/21 14:38:04 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,15 +56,3 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return (NULL);
 }
-/* #include <stdio.h> 
-int main(void)
-{
-	char    *resultado;
-	const char    *str;
-
-	str = "hola mundo";
-	resultado = ft_strchr(str, '3');
-
-	printf("Resultado: %s\n", resultado);
-	return 0;
-} */

@@ -6,19 +6,17 @@
 /*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 12:52:08 by maricamp          #+#    #+#             */
-/*   Updated: 2025/10/20 11:48:56 by usuario          ###   ########.fr       */
+/*   Updated: 2025/10/21 15:03:19 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if (c >= 'A' && c <= 'Z')
-    {
-        c = c + ' ';
-    }
-    return (c);
+	if (c >= 'A' && c <= 'Z')
+	{
+		c = c + ' ';
+	}
+	return (c);
 }
-
-

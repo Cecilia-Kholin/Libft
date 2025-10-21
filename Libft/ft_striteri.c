@@ -6,15 +6,15 @@
 /*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 11:32:46 by usuario           #+#    #+#             */
-/*   Updated: 2025/10/20 14:40:24 by usuario          ###   ########.fr       */
+/*   Updated: 2025/10/21 14:32:35 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int,char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	size_t  i;
+	size_t	i;
 
 	i = 0;
 	while (s[i])

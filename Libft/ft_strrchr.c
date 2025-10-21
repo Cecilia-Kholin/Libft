@@ -6,25 +6,25 @@
 /*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 12:52:08 by maricamp          #+#    #+#             */
-/*   Updated: 2025/10/20 15:56:32 by usuario          ###   ########.fr       */
+/*   Updated: 2025/10/21 15:15:00 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *string, int c)
+char	*ft_strrchr(const char *string, int c)
 {
-	size_t  i;
-	char   *temporal;
+	size_t	i;
+	char	*temporal;
 
 	temporal = NULL;
 	i = 0;
-	while((unsigned char)string[i] != '\0')
+	while ((unsigned char)string[i] != '\0')
 	{
 		if ((unsigned char)string[i] == (unsigned char)c)
 		{
 			temporal = (char *)&string[i];
-		} 
+		}
 		i++;
 	}
 	if ((unsigned char)c == '\0')

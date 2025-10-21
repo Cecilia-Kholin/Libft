@@ -6,43 +6,34 @@
 /*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 16:48:48 by maricamp          #+#    #+#             */
-/*   Updated: 2025/10/21 10:36:54 by usuario          ###   ########.fr       */
+/*   Updated: 2025/10/21 17:02:13 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t i;
-	size_t j;
+	unsigned char		*d;
+	const unsigned char	*s;
+	size_t				i;
 
-	i = 0;
-	j = 0;
-	if(!dest && !src)
+	d = (unsigned char *)dest;
+	s = (const unsigned char *)src;
+	if (!d && !s)
 		return (NULL);
-	unsigned char array_temporal[n];
-	while (i < n)
+	if (d == s || n == 0)
+		return (dest);
+	if (d < s)
+		ft_memcpy(d, s, n);
+	else
 	{
-		array_temporal[i] = *((char *)src + i);
-		i++;
+		i = n;
+		while (i > 0)
+		{
+			i--;
+			d[i] = s[i];
+		}
 	}
-	while (j < n)
-	{
-		*((char *)dest + j) = array_temporal[j];
-		j++;
-	}
-	return dest;
+	return (dest);
 }
-//#include <stdio.h> 
-//int main()
-//{
-//    char src[] = "Hola Mundo";
-//    char dest[20] = "Adios mundoyttyuty";
-//    printf("dest antes: %s\n", dest);
-//    ft_memmove(dest, src, 11);
-//    printf("src:  %s\n", src);
-//    printf("dest: %s\n", dest);
-//    
-//    return 0;
-//}

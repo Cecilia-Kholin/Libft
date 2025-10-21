@@ -6,7 +6,7 @@
 #    By: usuario <usuario@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/30 11:36:30 by maricamp          #+#    #+#              #
-#    Updated: 2025/10/20 12:04:30 by usuario          ###   ########.fr        #
+#    Updated: 2025/10/21 12:27:22 by usuario          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,7 +64,6 @@ all: $(NAME)
 # Crear la librería estática (no usar gcc aquí)
 $(NAME): $(OBJS)
 	$(AR) $(ARFLAGS) $(NAME) $(OBJS)
-# En macOS podría añadirse:  ranlib $(NAME)
 
 clean:
 	$(RM) $(OBJS)

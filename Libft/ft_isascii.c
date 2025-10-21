@@ -6,17 +6,16 @@
 /*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 10:40:40 by maricamp          #+#    #+#             */
-/*   Updated: 2025/10/20 14:41:30 by usuario          ###   ########.fr       */
+/*   Updated: 2025/10/21 14:52:30 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int    ft_isascii(int c)
-{ 
-	if (c >= 0 && c <= 127)
-		return 1;
-	else 
-		return 0;
+int	ft_isascii(int c)
+{
+	if ((c >= 0) && (c <= 127))
+		return (1);
+	else
+		return (0);
 }
-
