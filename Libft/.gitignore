@@ -1,0 +1,8 @@
+libftester/
+francinette/
+war-machine/
+*.o
+a.out
+.DS_Store
+*.dSYM/
+
