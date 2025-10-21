@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maricamp <maricamp@student.42.fr>          +#+  +:+       +#+        */
+/*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 11:14:54 by maricamp          #+#    #+#             */
-/*   Updated: 2025/10/01 12:54:27 by maricamp         ###   ########.fr       */
+/*   Updated: 2025/10/20 11:36:46 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,15 +38,15 @@ size_t ft_strlcat(char *dst, const char *src, size_t n)
     dst[len_dst] = '\0';
     return (len_dst_initial + len_src);
 }
-int main() {
-    char src[] = "mundo";
-    char dest[] = "hola";
+//int main() {
+//    char src[] = "mundo";
+//    char dest[] = "hola";//
 
-    printf("src antes: %s\n", src);
-    printf("dest antes: %s\n", dest);
-    size_t ret = ft_strlcat(dest, src, 10);
-    
-    printf("src: %s\n", src);
-    printf("dest: %s\n", dest);
-    printf("ret: %zu\n", ret);
-}
+//    printf("src antes: %s\n", src);
+//    printf("dest antes: %s\n", dest);
+//    size_t ret = ft_strlcat(dest, src, 10);
+//    
+//    printf("src: %s\n", src);
+//    printf("dest: %s\n", dest);
+//    printf("ret: %zu\n", ret);
+//}

@@ -6,7 +6,7 @@
 /*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 12:52:08 by maricamp          #+#    #+#             */
-/*   Updated: 2025/10/08 16:32:48 by usuario          ###   ########.fr       */
+/*   Updated: 2025/10/20 11:49:02 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,6 @@ int ft_toupper(int c)
         c = c - ' ';
     }
     return (c);
-}
-#include <stdio.h> 
-int main()
-{
-    int c = 'v';
-    c = ft_toupper(c);
-    printf("resultado %c\n", c);
 }
 
 

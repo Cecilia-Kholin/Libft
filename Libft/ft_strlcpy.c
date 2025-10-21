@@ -6,29 +6,31 @@
 /*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 09:35:02 by maricamp          #+#    #+#             */
-/*   Updated: 2025/10/08 11:58:11 by usuario          ###   ########.fr       */
+/*   Updated: 2025/10/20 14:50:38 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Te devuelve el tamaño de src para saber si hay truncamiento
-//se usa ft_strlen
-#include <stdio.h> 
 #include "libft.h"
 
-size_t ft_strlcpy(char *dest, const char *src, size_t n)
+size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 {
-    size_t i = 0; // size_t usado para tamaños y conteos.
-    int src_len;
+	int		src_len;
+	size_t	i;
 
-    src_len = ft_strlen(src);
-    while (i < n - 1 && src[i] != '\0') 
-    {
-        dest[i] = src[i];
-        i++;
-    }
-    dest[i] = '\0'; 
-    return (src_len);
+	i = 0;
+	src_len = ft_strlen(src);
+	if (n == 0)
+		return (src_len);
+	while (src[i] != '\0' && i < n - 1)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	
+	dest[i] = '\0';
+	return (src_len);
 }
+//#include <stdio.h> 
 //int main() {
 //    char src[] = "Hola mundo";
 //    char dest[20];
