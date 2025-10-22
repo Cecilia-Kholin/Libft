@@ -6,7 +6,7 @@
 /*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 15:38:10 by maricamp          #+#    #+#             */
-/*   Updated: 2025/10/21 15:02:52 by usuario          ###   ########.fr       */
+/*   Updated: 2025/10/22 09:59:44 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,17 +32,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-//#include <stdio.h>
-//int main()
-//{
-//    char src[] = "Hola mundo";
-//    char dest[20]; // suficiente espacio//
-
-//    // probamos ft_memcpy
-//    ft_memcpy(dest, src, 7); // copiamos 11 bytes (incluyendo '\0')//
-
-//    printf("src:  %s\n", src);
-//    printf("dest: %s\n", dest);//
-
-//    return 0;
-//}

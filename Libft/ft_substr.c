@@ -6,7 +6,7 @@
 /*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 10:36:48 by maricamp          #+#    #+#             */
-/*   Updated: 2025/10/21 16:18:56 by usuario          ###   ########.fr       */
+/*   Updated: 2025/10/22 10:04:31 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,26 +32,26 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	len_str;
 	size_t	total;
 	size_t	j;
-	char	*reservado;
+	char	*result;
 
 	j = 0;
 	if (!s)
 		return (NULL);
 	len_str = ft_strlen(s);
-	reservado = check_start(start, len_str);
-	if (reservado)
-		return (reservado);
+	result = check_start(start, len_str);
+	if (result)
+		return (result);
 	total = len_str - (size_t)start;
 	if (total > len)
 		total = len;
-	reservado = (char *)malloc(total + 1);
-	if (!reservado)
+	result = (char *)malloc(total + 1);
+	if (!result)
 		return (NULL);
 	while (j < total)
 	{
-		reservado[j] = s[(size_t)start + j];
+		result[j] = s[(size_t)start + j];
 		j++;
 	}
-	reservado[j] = '\0';
-	return (reservado);
+	result[j] = '\0';
+	return (result);
 }
