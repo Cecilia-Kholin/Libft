@@ -6,7 +6,7 @@
 #    By: usuario <usuario@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/30 11:36:30 by maricamp          #+#    #+#              #
-#    Updated: 2025/10/21 12:27:22 by usuario          ###   ########.fr        #
+#    Updated: 2025/10/23 11:17:22 by usuario          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,8 +52,18 @@ SRCS    = ft_isalpha.c \
           ft_putstr_fd.c \
           ft_putendl_fd.c \
           ft_putnbr_fd.c
+          
+INCLUDE = libft.h
+
+BONUSSRC = ft_lstnew.c
 
 OBJS    = $(SRCS:.c=.o)
+
+BONUSOBJ = $(BONUSSRC:.c=.o)
+
+bonus: $(OBJS) $(BONUSOBJ)
+	$(AR) $(ARFLAGS) $(NAME) $(BONUSOBJ) $(OBJS)
+
 
 all: $(NAME)
 
@@ -72,5 +82,7 @@ fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
+
+rebonus: fclean bonus
 
 .PHONY: all clean fclean re
