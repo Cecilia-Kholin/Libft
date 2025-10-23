@@ -6,7 +6,7 @@
 #    By: usuario <usuario@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/30 11:36:30 by maricamp          #+#    #+#              #
-#    Updated: 2025/10/23 11:17:22 by usuario          ###   ########.fr        #
+#    Updated: 2025/10/23 12:36:11 by usuario          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,7 +55,8 @@ SRCS    = ft_isalpha.c \
           
 INCLUDE = libft.h
 
-BONUSSRC = ft_lstnew.c
+BONUSSRC =  ft_lstnew.c \
+            ft_lstadd_front.c
 
 OBJS    = $(SRCS:.c=.o)
 
