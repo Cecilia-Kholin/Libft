@@ -6,7 +6,7 @@
 #    By: usuario <usuario@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/30 11:36:30 by maricamp          #+#    #+#              #
-#    Updated: 2025/10/23 14:41:35 by usuario          ###   ########.fr        #
+#    Updated: 2025/10/23 14:51:02 by usuario          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,8 @@ INCLUDE = libft.h
 
 BONUSSRC =  ft_lstnew.c \
             ft_lstadd_front.c \
-            ft_lstsize.c
+            ft_lstsize.c \
+            ft_lstlast.c
 
 OBJS    = $(SRCS:.c=.o)
 
