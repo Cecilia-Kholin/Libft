@@ -6,7 +6,7 @@
 #    By: usuario <usuario@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/30 11:36:30 by maricamp          #+#    #+#              #
-#    Updated: 2025/10/27 13:50:54 by usuario          ###   ########.fr        #
+#    Updated: 2025/10/27 14:00:12 by usuario          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,19 +64,21 @@ OBJS    = $(SRCS:.c=.o)
 
 BONUSOBJ = $(BONUSSRC:.c=.o)
 
-bonus: $(OBJS) $(BONUSOBJ)
-	$(AR) $(ARFLAGS) $(NAME) $(BONUSOBJ) $(OBJS)
-
-
 all: $(NAME)
 
-# Regla .c -> .o (¡OJO: TAB al inicio!)
-%.o: %.c
-	$(CC) $(CFLAGS) -I . -c $< -o $@
-
-# Crear la librería estática (no usar gcc aquí)
 $(NAME): $(OBJS)
 	$(AR) $(ARFLAGS) $(NAME) $(OBJS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -I . -c $< -o $@
+       
+
+
+bonus: OBJS += $(BONUSOBJS)
+bonus: $(NAME)
+
+
+
 
 clean:
 	$(RM) $(OBJS)
@@ -88,4 +90,4 @@ re: fclean all
 
 rebonus: fclean bonus
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re rebonus
