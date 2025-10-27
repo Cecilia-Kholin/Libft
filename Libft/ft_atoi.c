@@ -6,7 +6,7 @@
 /*   By: usuario <usuario@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 16:10:45 by usuario           #+#    #+#             */
-/*   Updated: 2025/10/23 11:35:10 by usuario          ###   ########.fr       */
+/*   Updated: 2025/10/27 13:50:44 by usuario          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,5 @@ int	ft_atoi(const char *nptr)
 		num += nptr[i] - '0';
 		i++;
 	}
-	if ((nptr[i] >= 'A' && nptr[i] >= 'Z')
-		|| (nptr[i] >= 'a' && nptr[i] >= 'z'))
-		return (num * sign);
 	return (num * sign);
 }
